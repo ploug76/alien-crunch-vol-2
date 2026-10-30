@@ -23,6 +23,7 @@ body.land .ab{height:48px}
 .b.go{background:linear-gradient(#7ee36a,#2fae4a)}
 .b.big{font-size:22px;min-height:58px;width:100%}
 .b.mid{flex:1;min-width:0}
+.b.skip{background:linear-gradient(#ff4a4a,#b81414);font-size:22px;min-height:58px}
 .b.sm{font-size:16px;min-height:44px;padding:4px 12px}
 .b.gpf,.node.gpf,.tnode.gpf{outline:4px solid #ffe14d;outline-offset:3px;box-shadow:0 0 0 7px rgba(255,225,77,.35),0 4px 0 rgba(0,0,0,.35)}
 .row{display:flex;gap:10px;width:100%}

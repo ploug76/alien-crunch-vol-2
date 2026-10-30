@@ -663,7 +663,7 @@ function showTitle(){G=null;setState('title');MUS.play('title');const done=save.
 function showStory(mode){storyMode=mode;storyI=0;setState('story');MUS.play(mode==='end'?'ending':'title');storyPage()}
 function storyPage(){const P=storyMode==='end'?[ENDING]:STORY;const p=P[storyI];const last=storyI>=P.length-1;
  showUI('<div class="panel kb"><img src="art/'+p.img+'.webp?v='+VERSION+'" alt=""></div><p class="stxt">'+p.t+'</p>'+
- '<div class="row">'+(storyMode==='end'?btn('endtitle','🏆 Title','mid')+btn('endless','♾ Endless','mid go'):btn('skip','Skip','mid')+btn('snext',last?'Let\'s go! ▶':'Next ▶','mid go'))+'</div>'+
+ '<div class="row">'+(storyMode==='end'?btn('endtitle','🏆 Title','mid')+btn('endless','♾ Endless','mid go'):btn('skip','SKIP ⏭','mid skip')+btn('snext',last?'Let\'s go! ▶':'Next ▶','mid go'))+'</div>'+
  (storyMode==='end'?'<p class="foot">You beat all 5 worlds! ★ '+totalStars()+' / '+STAGES.length*3+'</p>':'<p class="dots">'+P.map((_,i)=>i===storyI?'●':'○').join(' ')+'</p>'),'story')}
 /* ---- map ---- */
 function showMap(focus){G=null;setState('map');MUS.play('map');let h='<div class="top">'+btn('title','◀ Back','sm')+'<b>World Map</b><span class="tot">★ '+totalStars()+'</span></div><div class="worlds">';
